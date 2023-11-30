@@ -1,2 +1,2 @@
-# La-Contaminaci-n-Ambiental
+# La-Contaminación-Ambiental
 Cuidemos el planeta
