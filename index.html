@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>La contaminación ambiental</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6BBBC8;
+        }
+
+        header {
+            background-color: #3985B3;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #navlist {
+            font-weight: bold;
+        }
+
+        .navlist ul{
+            text-align: center;
+            margin:15px;
+            padding:0px;
+        }
+
+        .navlist ul li{
+            list-style-type:circle;
+            padding:0px 12px;
+            display:inline;
+            font-size:15px;
+            border: 1px black;
+        }
+
+        .navlist ul li a{
+            color:#03314b;
+            text-decoration:none;
+        }
+
+        .navlist ul li a:hover{
+            text-decoration:underline;
+        }
+
+        .navlist ul li:last-child {
+            border-right:none;
+        }
+            
+        #navlist a {
+            float:center;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .navlist-right{
+            float:right;
+        }
+
+        article {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        aside {
+            background-color: #90CAEC;
+            color: #fff;
+            padding: 20px;
+            margin: 20px;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #3985B3;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .form-container {
+            color: #6BBBC8;
+        }
+
+        .image-container {
+            color: #13525c;
+        }
+
+        img {
+            margin: 20px 0px 0px 0px;
+            width: auto;
+            height: 100px;
+        }
+        h1 {
+            font-size: 40px;
+        }
+
+                article {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        aside {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .form-container {
+            margin-right: 20px;
+        }
+
+        .form-container input {
+            margin: 5px 0;
+            width: 100%;
+        }
+
+        .image-container {
+            flex: 1;
+        }
+    </style>
+     <script>
+        
+        function guardarDatos() {
+            // Obtener los valores de los campos del formulario
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            var ciudad = document.getElementById("ciudad").value;
+            var pais = document.getElementById("pais").value;
+
+        }
+
+        function buscarGoogle() {
+            var query = document.getElementById("busqueda").value;
+            var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
+          
+            window.location.href = url;
+        }
+    </script>
+</head>
+<body>
+<header>
+    <h1>La contaminación ambiental</h1>
+    </header>
+    <div id="page_content">
+        <div class="navlist">
+        <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="antesydespues.html">Antes y Despues</a></li>
+        <li><a href="causasyconsecuencias.html">Causas y Consecuencias</a></li>
+        <li><a href="medidasdesolucion.html">Medidas para reducir la contaminación ambiental</a></li>
+              </form>
+          </div></li>
+        <article>
+            <h2>¿Qué es la contaminación ambiental?</h2>
+            <p>Es la presencia de componentes nocivos que normalmente no deberían estar en el y que afectan el equilibrio del ecosistema.</p>
+        </article>
+        <section>
+            <h2>Tipos de contaminación</h2>
+            <p>Existen diversos tipos de contaminación como: 
+                <ul>
+           <li>Contaminación atmosférica: Se produce a causa de la emisión de sustancias químicas a la atmósfera que afectan directamente a la calidad del aire.</li>
+
+           <li>Contaminación hídrica: Afecta a ríos, fuentes de agua subterránea, lagos y mar cuando se liberan residuos contaminantes.</li>
+
+           <li>Contaminación del suelo: Una vez más las sustancias químicas de uso común en la agricultura intensiva son las causantes de este tipo de contaminación.</li>
+
+           <li>Contaminación acústica: La contaminación acústica se produce con cualquier ruido excesivo ya sea en proporción, frecuencia, tono, volumen o ritmo.</li>
+           
+           <li>Contaminación lumínica:Se produce especialmente en las ciudades durante la noche y hace referencia a la iluminación artificial excesiva que emiten las poblaciones.</li>
+
+           <li> Contaminación visual: Es todo aquello que altera visualmente el paisaje natural.</li>
+
+           <li>Contaminación térmica: Proceso que modifica la temperatura del medio ambiente de manera perjudicial.</li>
+            </ul>
+        </p>
+        </section>
+        <section>
+            <div class="form-container">
+                <h2>Formulario</h2>
+                <form>
+                    <br><label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"></br>
+                    <br><label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido"></br>
+                    <br><label for="ciudad">Ciudad:</label>
+                    <input type="text" id="ciudad" name="ciudad"></br>
+                    <br><label for="pais">Pais:</label>
+                    <input type="text" id="pais" name="pais"></br>
+                    <br><input type="submit" value="Guardar" placeholder="Guardar"></br>
+                </form>
+                <div class="image-container">
+                    <img src="images/image1.jpeg" alt="Contaminación">
+                    <img src="images/image2.jpg" alt="Ambiente">
+                </div>
+            </div>
+        </section>
+        <aside>
+            <h3>Buscar en Google</h3>
+            <form action="https://www.google.com/search" method="get">
+                <input type="text" name="q" placeholder="Buscar en Google">
+                <input type="submit" value="Buscar">
+            </form>
+            <h3>Video de YouTube</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/3WHBQEbMbQ8?si=czrHmmfDDYY_3PuI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </aside>
+        <footer>
+            &copy; Contaminación ambiental - Gianella Florian
+        </footer>
+    </body>
+    </html>
